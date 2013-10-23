@@ -1,0 +1,139 @@
+body
+{
+  font: 14px arial;
+  overflow-y: scroll;
+}
+h2
+{
+  padding: 0px;
+  margin: 0px 0px 4px 0px;
+}
+h3
+{
+  padding: 0px;
+  margin: 0px 0px 4px 0px;
+}
+
+a
+{
+  color: blue;
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+a:visited
+{
+  color: blue;
+}
+
+.spo
+{
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+#whitelisted_domains
+{
+  margin: 10px;
+}
+
+.entry_table td
+{
+  vertical-align: top;
+}
+.entry_table
+{
+  font-size: 12px;
+}
+
+.note
+{
+  font-size: 12px;
+}
+.ok_message
+{
+  color: green;
+}
+.error_message
+{
+  color: red;
+}
+.sneaky
+{
+  font-size: x-small;
+  color: gray;
+  border-color: gray;
+  margin-top: 50px;
+}
+.info
+{
+  background: #eeeeee;
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 460px;
+}
+.section
+{
+  border: 1px solid #666666;
+  -webkit-border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #f8faff;
+}
+.box
+{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+.topInfo
+{
+  font-size: 12pt;
+  margin-top: 5px;
+}
+.warning
+{
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.icon
+{
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+.update_time
+{
+  padding-left: 3em;
+  color: gray;
+}
+
+.optionList
+{
+  border: 0;
+}
+.optionList td
+{
+  vertical-align: top;
+}
+.optionList select
+{
+  font-size: larger;
+}
+
+.optionDescription
+{
+  cursor: pointer;
+  line-height: 1.5em;
+}
+
+.diag_table
+{
+  width: 100%;
+}

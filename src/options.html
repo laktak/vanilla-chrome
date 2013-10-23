@@ -1,0 +1,144 @@
+﻿<html>
+<head>
+  <title i18n="optionsCaption"></title>
+  <link rel="stylesheet" type="text/css" href="css/options.css" />
+  <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.5.custom.css" />
+  <script src="lib/jquery-1.8.3.min.js"></script>
+  <script src="lib/jquery-ui-1.8.5.custom.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/options.js"></script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td valign="top">
+        <div class="spo">
+          <!-- -->
+        </div>
+      </td>
+      <td>
+        <div class="section">
+          <img src="img/icon128.png" align="right" width="50" height="50" />
+          <h2 i18n="optionsCaption">
+          </h2>
+          <div id="versionInfo" class="topInfo"></div>
+        </div>
+        <div class="section">
+          <h3 i18n="optionsWhitelist">
+          </h3>
+          <div id="whitelisted_domains">
+          </div>
+          <div i18n="optionsWhitelistHelp">
+          </div>
+        </div>
+        <div class="section">
+          <p i18n="optionsInfo">
+          </p>
+          <table class="optionList">
+            <tr>
+              <td>
+                <!--input type="checkbox" class="feature" id="autoDelDark"-->
+              </td>
+              <td>
+                <select id="autoDelDarkMinutes">
+                </select>
+                <!--span class="optionDescription" i18n="optionsAutoDelDark"></span-->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="feature" id="clearCookiesOnStartup">
+              </td>
+              <td>
+                <div class="optionDescription" i18n="optionsClearCookiesOnStartup">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="feature" id="protectCookies">
+              </td>
+              <td>
+                <div class="optionDescription" i18n="optionsProtectCookies">
+                </div>
+                <div id="protectCookiesWarning">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="feature" id="showUpdates">
+              </td>
+              <td>
+                <span class="optionDescription" i18n="optionsShowUpdates"></span> (<a i18n="optionsShowUpdatesNow" href="updated.html"></a>)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="feature" id="hideTabIcon">
+              </td>
+              <td>
+                <span class="optionDescription" i18n="optionsHideTabIcon"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <h3 i18n="optionsFeedback">
+          </h3>
+          <p i18n="optionsFeedbackText">
+          </p>
+          <p i18n="optionsFeedbackBug">
+          </p>
+        </div>
+        <div class="section">
+          <div style="float: right">
+            <a id="diagRefresh" href="#"><span i18n="optionsRefresh"></span>
+              <img src="img/refresh.png" style="vertical-align: middle" width="20" height="20" /></a>
+          </div>
+          <h3 i18n="optionsDiagnostics">
+          </h3>
+          <div id="accordion">
+            <h3>
+              <a i18n="optionsDiagLog" href="#"></a>
+            </h3>
+            <div>
+              <input type="checkbox" class="feature" id="logEnable" />
+              <span class="optionDescription" i18n="optionsEnable"></span>
+              <div id="diagLog">
+              </div>
+            </div>
+            <h3>
+              <a i18n="optionsDiagBlack" href="#"></a>
+            </h3>
+            <div id="diagBlack">
+            </div>
+            <h3>
+              <a i18n="optionsDiagWhite" href="#"></a>
+            </h3>
+            <div id="diagWhite">
+            </div>
+            <h3>
+              <a i18n="optionsDiagProtected" href="#"></a>
+            </h3>
+            <div id="diagProtected">
+            </div>
+            <h3>
+              <a i18n="optionsExportLabel" href="#"></a>
+            </h3>
+            <div>
+              <div i18n="optionsExportHelp">
+              </div>
+              <textarea id="expimp" cols="40" rows="15"></textarea>
+              <br />
+              <input type="button" id="btnExport" i18n_value="optionsExportCmd" style="height: 22px; margin-top: 2px;" />
+              <input type="button" id="btnImport" i18n_value="optionsImportCmd" style="height: 22px; margin-top: 2px;" />
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

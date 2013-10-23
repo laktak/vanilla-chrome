@@ -1,0 +1,112 @@
+﻿{
+
+"extName": { "message": "Vanilla" },
+
+"extDescription": { "message": "A Cookie Whitelist Manager that helps protect your privacy. Automatically removes unwanted cookies." },
+
+"popupClearAll": {
+  "message": "Clear Unwanted Cookies ($black$ out of $total$)",
+  "placeholders": {
+    "black": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"popupAddWhite": {
+  "message": "Add <b>$dom$</b> to whitelist",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+               
+"popupDelWhite": {
+  "message": "Remove <b>$dom$</b> from whitelist",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+
+"labelOptions": { "message": "Show Options" },
+
+
+"optionsCaption": { "message": "Vanilla Options" },
+
+"optionsInfo": {
+  "message": "<b>Recommended usage:</b><ul>
+    <li>add desired sites to your whitelist</li>
+    <li>enable <i>Clear unwanted cookies on startup</i> (below)</li>
+    </ul>
+    If you do not want to remove unwanted cookies automatically you have to clear your cookies manually using the Vanilla icon in your omnibar."
+},
+
+"optionsClearCookiesOnStartup": { "message": "Clear unwanted cookies on startup, or" },
+"optionsProtectCookies": { "message": "Protect whitelisted cookies" },
+
+"optionsProtectCookiesWarning1": { 
+  "message": "<b>You can now enable Chrome's <i>Keep local data only until I quit my browser</i> - Vanilla will protect your cookies.</b>
+    <br/>You can find this setting in <i>Chrome, Options, Show advanced settings, Privacy - Content settings</i>."
+},
+"optionsProtectCookiesWarning2": { 
+  "message": "<b>Please make sure that you are not using <i>Keep local data only until I quit my browser</i> in Chrome, 
+    otherwise all your cookies will be deleted!</b>
+    <br/>You can find this setting in <i>Chrome, Options, Show advanced settings, Privacy - Content settings</i>."
+},
+
+"optionsAutoDelDark": { "message": "Auto delete unwanted cookies after 30 minutes" },
+
+"optionsAutoDelDarkNever": { "message": "Do not auto delete unwanted cookies" },
+"optionsAutoDelDarkMinutes": {
+  "message": "Auto delete unwanted cookies after $minutes$ minutes",
+  "description": "...",
+  "placeholders": {
+    "minutes": { "content": "$1", "example": "1" }
+  }
+},
+
+"optionsShowUpdates": { "message": "Show changes when this extension is updated" },
+"optionsShowUpdatesNow": { "message": "View History" },
+
+"optionsHideTabIcon": { "message": "Hide the Vanilla omnibar icon - you will have to manage your whitelist manually on this options page!" },
+
+"optionsEnable": { "message": "Enable" },
+"optionsFeedback": { "message": "Information & Feedback" },
+
+"optionsFeedbackText": {
+  "message": "<b>If you want to manage your local storage please star this <a href='http://code.google.com/p/chromium/issues/detail?id=78093'>Chrome Issue</a>!</b><p> Do you like Vanilla? <a href='https://chrome.google.com/extensions/detail/gieohaicffldbmiilohhggbidhephnjj'>Leave a comment and rating</a>!"
+},
+"optionsFeedbackBug": { "message": "Did you find a bug? <b>If you are a developer you can now fork Vanilla on <a href='https://github.com/laktak/vanilla-chrome'>GitHub</a>!</b>" },
+
+"optionsWhitelist": { "message": "Whitelist: cookies from these sites will not be deleted" },
+"optionsAdd": { "message": "Add" },
+"optionsEdit": { "message": "Edit" },
+"optionsRemove": { "message": "Remove" },
+"optionsToggleSub": { "message": "Include-Subdomains" },
+"optionsWhitelistHelp": { "message": "*. will include all subdomains of a site. E.g. *.google.com will include www.google.com, docs.google.com, mail.google.com, ... as well as google.com" },
+
+"optionsDiagnostics": { "message": "Diagnostics &amp; Tools" },
+"optionsRefresh": { "message": "Refresh" },
+"optionsDiagLog": { "message": "Logging" },
+"optionsDiagBlack": { "message": "Sites with unwanted cookies" },
+"optionsDiagWhite": { "message": "Sites with cookies on whitelist" },
+"optionsDiagProtected": { "message": "Sites with protected cookies" },
+
+"optionsExportLabel": { "message": "Export/Import Whitelist" },
+"optionsExportHelp": { "message": "To export click Export first, then copy the entries from the box below. To import first paste all entires in the box below (one per line) and then click Import." },
+"optionsExportCmd": { "message": "Export" },
+"optionsImportCmd": { "message": "Import" },            
+
+"popupErrorEmpty": { "message": "Whitelist is empty - please add some sites!" },
+
+"popupClearAllMsg": {
+  "message": "Removed $removed$ out of $total$ cookies!",
+  "description": "...",
+  "placeholders": {
+    "removed": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"updatedCaption": { "message": "Vanilla Updated" },
+"updatedInfo": { "message": "Vanilla Cookie Manager was updated (you can turn this page off in options)." }
+
+}

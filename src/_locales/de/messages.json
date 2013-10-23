@@ -1,0 +1,110 @@
+﻿{
+
+"extName": { "message": "Vanilla" },
+
+"extDescription": { "message": "Ein Cookie Whitelist Manager der hilft Ihre Privatsphäre zu schützen. Löscht unerwünschte Cookies automatisch." },
+
+"popupClearAll": {
+  "message": "Unerwünschte Cookies löschen ($black$ von $total$)",
+  "placeholders": {
+    "black": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"popupAddWhite": {
+  "message": "<b>$dom$</b> zu Whitelist hinzufügen",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+               
+"popupDelWhite": {
+  "message": "<b>$dom$</b> aus Whitelist löschen",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+
+"labelOptions": { "message": "Optionen anzeigen" },
+
+
+"optionsCaption": { "message": "Vanilla Optionen" },
+
+"optionsInfo": {
+  "message": "<b>Empfohlene Verwendung:</b><ul>
+    <li>gewünschte Sites zur Whitelist hinzufügen</li>
+    <li><i>Unerwünschte Cookies beim Starten entfernen</i> verwenden (unten)</li>
+    </ul>
+    Wenn Sie die unerwünschte Cookies nicht automatisch löschen wollen müssen Sie die Cookies manuell über das Vanilla Icon in der Omnibar entfernen."
+},
+
+"optionsClearCookiesOnStartup": { "message": "Unerwünschte Cookies beim Starten entfernen, oder" },
+"optionsProtectCookies": { "message": "Beta: Whitelist Cookies schützen" },
+
+"optionsProtectCookiesWarning1": { 
+  "message": "Sie können Chrome's Funktion <i>Cookies und andere Websitedaten beim Schließen des Browsers löschen</i> verwenden - Vanilla wird Ihre Cookies schützen.
+    <br/>Sie finden diese Option in <i>Chrome Optionen / Details / Content-Einstellungen</i>."
+},
+"optionsProtectCookiesWarning2": { 
+  "message": "<b>Bitte stellen Sie sicher dass <i>Cookies und andere Websitedaten beim Schließen des Browsers löschen</i> 
+    in Chrome abgeschalten ist - sonst werden alle Cookies gelöscht!</b>
+    <br/>Sie finden diese Option in <i>Chrome Optionen / Details / Content-Einstellungen</i>."
+},
+
+"optionsAutoDelDark": { "message": "Unerwünschte Cookies automatisch nach 30 Minuten löschen" },
+"optionsAutoDelDarkNever": { "message": "Unerwünschte Cookies nicht automatisch löschen" },
+"optionsAutoDelDarkMinutes": {
+  "message": "Unerwünschte Cookies automatisch nach $minutes$ löschen",
+  "description": "...",
+  "placeholders": {
+    "minutes": { "content": "$1", "example": "1" }
+  }
+},
+"optionsShowUpdates": { "message": "Änderungen anzeigen wenn diese Erweiterung upgedated wird" },
+"optionsShowUpdatesNow": { "message": "Historie anzeigen" },
+
+"optionsHideTabIcon": { "message": "Versteckt das Vanilla Omnibar icon - alle Einstellungen müssen dann auf dieser Seite durchgeführt werden!" },
+
+"optionsEnable": { "message": "Enable" },
+"optionsFeedback": { "message": "Information & Feedback" },
+
+"optionsFeedbackText": {
+  "message": "<b>If you want to manage your local storage please star this <a href='http://code.google.com/p/chromium/issues/detail?id=78093'>Chrome Issue</a>!</b><p> Do you like Vanilla? <a href='https://chrome.google.com/extensions/detail/gieohaicffldbmiilohhggbidhephnjj'>Leave a comment and rating</a>!"
+},
+"optionsFeedbackBug": { "message": "Did you find a bug? <b>If you are a developer you can now fork Vanilla on <a href='https://github.com/laktak/vanilla-chrome'>GitHub</a>!</b>" },
+
+"optionsWhitelist": { "message": "Whitelist: Cookies dieser Sites werden nicht gelöscht" },
+"optionsAdd": { "message": "Hinzufügen" },
+"optionsEdit": { "message": "Editieren" },
+"optionsRemove": { "message": "Löschen" },
+"optionsToggleSub": { "message": "Subdomains-inkludieren" },
+"optionsWhitelistHelp": { "message": "*. inkludiert alle Subdomains einer Site. Z.B. gilt *.google.com für www.google.com, docs.google.com, mail.google.com, ... und google.com" },
+
+"optionsDiagnostics": { "message": "Diagnostics &amp; Tools" },
+"optionsRefresh": { "message": "Aktualisieren" },
+"optionsDiagLog": { "message": "Logging" },
+"optionsDiagBlack": { "message": "Sites deren Cookies gelöscht werden" },
+"optionsDiagWhite": { "message": "Sites mit Cookies auf der Whitelist" },
+"optionsDiagProtected": { "message": "Sites mit geschützten Cookies" },
+
+"optionsExportLabel": { "message": "Export/Import Whitelist" },
+"optionsExportHelp": { "message": "(ein Eintrag pro Zeile)" },
+"optionsExportCmd": { "message": "Export" },
+"optionsImportCmd": { "message": "Import" },            
+
+"popupErrorEmpty": { "message": "Whitelist is leer - bitte fügen Sie Sites hinzu!" },
+
+"popupClearAllMsg": {
+  "message": "$removed$ von $total$ Cookies gelöscht!",
+  "description": "...",
+  "placeholders": {
+    "removed": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"updatedCaption": { "message": "Vanilla Updated" },
+"updatedInfo": { "message": "Vanilla Cookie Manager wurde upgedated (diese Seite kann in den Optionen abgeschalten werden)." }
+
+}
