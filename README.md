@@ -1,4 +1,4 @@
-vanilla-chrome
+Vanilla Cookie Manager
 ==============
 
 A Cookie Whitelist Manager for Chrome that helps protect your privacy. Automatically removes unwanted cookies.
@@ -7,6 +7,18 @@ Cookies can be used for authentication, storing your site preferences or anythin
 You could turn off cookies completely or just shut off third-party cookies. But that would also keep out useful cookies that many web apps rely upon to work (like Google Mail or Calendar).
 
 With Vanilla you can select which cookies you want to keep on a whitelist. All unwanted cookies are deleted automatically (or manually if you prefer).
+
+
+Local Storage
+------------
+Vanilla cannot manage local storage because Chrome has yet to implement an api for it.
+
+Please star this [Chrome Issue](http://code.google.com/p/chromium/issues/detail?id=78093).
+
+
+Bugs & Features
+------------
+Please submit a pull request.
 
 
 Installation
