@@ -1,0 +1,112 @@
+{
+
+"extName": { "message": "Vanilla" },
+
+"extDescription": { "message": "Un gestionnaire de cookies, qui aide à protéger votre vie privée. Supprime automatiquement les cookies indésirables." },
+
+"popupClearAll": {
+  "message": "Supprimer les cookies indésirables ($black$ sur $total$)",
+  "placeholders": {
+    "black": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"popupAddWhite": {
+  "message": "Ajouter <b>$dom$</b> à la liste blanche",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+               
+"popupDelWhite": {
+  "message": "Retirer <b>$dom$</b> de la liste blanche",
+  "placeholders": {
+    "dom": { "content": "$1", "example": "google.com" }
+  }
+},
+
+"labelOptions": { "message": "Afficher les options" },
+
+
+"optionsCaption": { "message": "Options de Vanilla" },
+
+"optionsInfo": {
+  "message": "<b>Recomendations :</b><ul>
+    <li>Ajouter les sites désirés à votre liste blanche</li>
+    <li>cocher <i>Effacer les cookies indésirables au démarage</i> (ci-dessous)</li>
+    </ul>
+    Si vous ne voulez par supprimer les cookies indésirables automatiquement, vous devrez les effacer manuellement via l'icone Vanilla dans votre omnibar."
+},
+
+"optionsClearCookiesOnStartup": { "message": "Effacer les cookies indésirables au démarage, ou" },
+"optionsProtectCookies": { "message": "Protéger les cookies de la liste blanche" },
+
+"optionsProtectCookiesWarning1": { 
+  "message": "<b>Vous pouvez maintenant cocher l'option de Chrome : <i>Ne conserver les données locales que jusqu'à ce que je quitte ma session de navigation</i> - Vanilla va protéger vos cookies.</b>
+    <br/>Vous trouverez cette option dans <i>Chrome, Options, Afficher les paramètres avancés, Confidentialité - Paramètres du contenu</i>."
+},
+"optionsProtectCookiesWarning2": { 
+  "message": "<b>Prenez garde à ne pas utiliser <i>Ne conserver les données locales que jusqu'à ce que je quitte ma session de navigation</i> dans Chrome, 
+    si non tout vos cookies vont être supprimés !</b>
+    <br/>Vous trouverez cette option dans <i>Chrome, Options, Afficher les paramètres avancés, Confidentialité - Paramètres du contenu</i>."
+},
+
+"optionsAutoDelDark": { "message": "Supprimer automatiquement les cookies indésirables après 30 minutes" },
+
+"optionsAutoDelDarkNever": { "message": "Ne pas effacer les cookies indésirables" },
+"optionsAutoDelDarkMinutes": {
+  "message": "Supprimer automatiquement les cookies indésirables après $minutes$ minutes",
+  "description": "...",
+  "placeholders": {
+    "minutes": { "content": "$1", "example": "1" }
+  }
+},
+
+"optionsShowUpdates": { "message": "Afficher les changements après les mises à jour de cette extension" },
+"optionsShowUpdatesNow": { "message": "Voir l'historique" },
+
+"optionsHideTabIcon": { "message": "Cacher l'icone Vanilla dans l'omnibar - vous devrez gérer votre liste blanche manuellement depuis cette page d'options !" },
+
+"optionsEnable": { "message": "Activer" },
+"optionsFeedback": { "message": "Informations et Réactions" },
+
+"optionsFeedbackText": {
+  "message": "<b>Si vous voulez gérer votre stockage local, vous pouvez étoiler ce <a href='http://code.google.com/p/chromium/issues/detail?id=78093'>problème de Chrome</a>!</b><p> Vous aimez Vanilla ? <a href='https://chrome.google.com/extensions/detail/gieohaicffldbmiilohhggbidhephnjj'>Laissez un commentaire et une note</a> !"
+},
+"optionsFeedbackBug": { "message": "Vous trouvez un bug ? <b>Si vous êtes un dévelopeur, vous pouvez maintenant participer à Vanilla sur <a href='https://github.com/laktak/vanilla-chrome'>GitHub</a>!</b>" },
+
+"optionsWhitelist": { "message": "Liste blanche :  les cookies de ces cites ne seront pas supprimés" },
+"optionsAdd": { "message": "Ajouter" },
+"optionsEdit": { "message": "Editer" },
+"optionsRemove": { "message": "Supprimer" },
+"optionsToggleSub": { "message": "Inclure les sous-domaines" },
+"optionsWhitelistHelp": { "message": "*. ajoutera tout les sous domaines d'un site, par exemple *.google.com incluera www.google.com, docs.google.com, mail.google.com, ... aussi bien que google.com" },
+
+"optionsDiagnostics": { "message": "Diagnostiques &amp; Outils" },
+"optionsRefresh": { "message": "Rafraichir" },
+"optionsDiagLog": { "message": "S'enregistrer" },
+"optionsDiagBlack": { "message": "Sites avec des cookies indésirables" },
+"optionsDiagWhite": { "message": "Sites avec des cookies sur la liste blanche" },
+"optionsDiagProtected": { "message": "Sites avec des cookies protégés" },
+
+"optionsExportLabel": { "message": "Exporter/Importer une liste blanche" },
+"optionsExportHelp": { "message": "Pour exporter, cliquez déjà sur Exporter, ensuite copiez entièrement la liste ci dessous. Pour importer, collez toutes les entrées dans la liste ci dessous (une par ligne) puis cliquez Importer" },
+"optionsExportCmd": { "message": "Exporter" },
+"optionsImportCmd": { "message": "Importer" },            
+
+"popupErrorEmpty": { "message": "La liste blanche est vide - ajoutez des sites !" },
+
+"popupClearAllMsg": {
+  "message": "$removed$ sur $total$ cookies viennent d'être supprimés !",
+  "description": "...",
+  "placeholders": {
+    "removed": { "content": "$1", "example": "1" },
+    "total": { "content": "$2", "example": "2" }
+  }
+},
+
+"updatedCaption": { "message": "Vanilla mis à jour" },
+"updatedInfo": { "message": "Vanilla Cookie Manager a été mis à jour (vous pouvez désactiver ce message dans les options)." }
+
+}
