@@ -32,7 +32,7 @@
 "optionsCaption": { "message": "Options de Vanilla" },
 
 "optionsInfo": {
-  "message": "<b>Recomendations :</b><ul>
+  "message": "<b>Recommendations :</b><ul>
     <li>Ajouter les sites désirés à votre liste blanche</li>
     <li>cocher <i>Effacer les cookies indésirables au démarage</i> (ci-dessous)</li>
     </ul>
@@ -72,16 +72,16 @@
 "optionsFeedback": { "message": "Informations et Réactions" },
 
 "optionsFeedbackText": {
-  "message": "<b>Si vous voulez gérer votre stockage local, vous pouvez étoiler ce <a href='http://code.google.com/p/chromium/issues/detail?id=78093'>problème de Chrome</a>!</b><p> Vous aimez Vanilla ? <a href='https://chrome.google.com/extensions/detail/gieohaicffldbmiilohhggbidhephnjj'>Laissez un commentaire et une note</a> !"
+  "message": "<b>Si vous voulez gérer votre stockage local, vous pouvez étoiler ce <a href='http://code.google.com/p/chromium/issues/detail?id=78093'>problème de Chrome</a> !</b><p> Vous aimez Vanilla ? <a href='https://chrome.google.com/extensions/detail/gieohaicffldbmiilohhggbidhephnjj'>Laissez un commentaire et une note</a> !"
 },
-"optionsFeedbackBug": { "message": "Vous trouvez un bug ? <b>Si vous êtes un dévelopeur, vous pouvez maintenant participer à Vanilla sur <a href='https://github.com/laktak/vanilla-chrome'>GitHub</a>!</b>" },
+"optionsFeedbackBug": { "message": "Vous trouvez un bug ? <b>Si vous êtes un dévelopeur, vous pouvez participer à Vanilla sur <a href='https://github.com/laktak/vanilla-chrome'>GitHub</a>!</b>" },
 
-"optionsWhitelist": { "message": "Liste blanche :  les cookies de ces cites ne seront pas supprimés" },
+"optionsWhitelist": { "message": "Liste blanche :  les cookies de ces sites ne seront pas supprimés" },
 "optionsAdd": { "message": "Ajouter" },
 "optionsEdit": { "message": "Editer" },
 "optionsRemove": { "message": "Supprimer" },
 "optionsToggleSub": { "message": "Inclure les sous-domaines" },
-"optionsWhitelistHelp": { "message": "*. ajoutera tout les sous domaines d'un site, par exemple *.google.com incluera www.google.com, docs.google.com, mail.google.com, ... aussi bien que google.com" },
+"optionsWhitelistHelp": { "message": "*. ajoutera tous les sous-domaines d'un site, par exemple *.google.com incluera www.google.com, docs.google.com, mail.google.com, ... aussi bien que google.com" },
 
 "optionsDiagnostics": { "message": "Diagnostiques &amp; Outils" },
 "optionsRefresh": { "message": "Rafraichir" },
