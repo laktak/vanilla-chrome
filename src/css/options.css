@@ -2,6 +2,7 @@ body
 {
   font: 14px arial;
   overflow-y: scroll;
+  background-color: #ECECEC;
 }
 h2
 {
@@ -26,12 +27,6 @@ a:hover
 a:visited
 {
   color: blue;
-}
-
-.spo
-{
-  vertical-align: top;
-  margin-top: 20px;
 }
 
 #whitelisted_domains
@@ -80,10 +75,41 @@ a:visited
 .section
 {
   border: 1px solid #666666;
-  -webkit-border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
-  margin: 20px;
-  background-color: #f8faff;
+  margin: 10px 20px;
+  background-color: #fff;
+}
+.spo
+{
+  height: 150px;
+  padding: 0 100px;
+  display: table;
+  font-size: 120%;
+}
+.spo, .spo:hover, .spo:visited, .spo:active
+{
+  color: black;
+  text-decoration: none;
+}
+.spo div
+{
+  height: 100%;
+  width: 500px;
+  display: table-cell; vertical-align: middle;
+}
+.spo img
+{
+  height: 150px;
+  float: left;
+  margin-right: 30px;
+}
+.gi
+{
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
 }
 .box
 {

@@ -229,7 +229,5 @@ function showWhitelist()
   }
 
   showDiag();
-
-  $("#txtWhitelistedDomain").focus();
 }
 
