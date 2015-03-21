@@ -1,15 +1,12 @@
 /// <reference path="../lib/jquery-1.8.3.min.js" />
 
-var myStore=
-{
+var myStore= {
   set: function (key, value) { localStorage.setItem(key, JSON.stringify(value)); },
-  get: function (key, defaultValue)
-  {
+  get: function (key, defaultValue) {
     var rc=localStorage.getItem(key);
     return rc!=null?JSON.parse(rc):defaultValue;
   },
-  getAllKeys: function ()
-  {
+  getAllKeys: function () {
     var rc=new Array();
     for (var i=0; i<localStorage.length; i++) rc.push(localStorage.key(i));
     return rc;
@@ -17,13 +14,11 @@ var myStore=
   del: function (key) { localStorage.removeItem(key); }
 };
 
-function getBg()
-{
+function getBg() {
   return chrome.extension.getBackgroundPage();
 }
 
-function getVersion()
-{
+function getVersion() {
   var xhr=new XMLHttpRequest();
   xhr.open('GET', chrome.extension.getURL('manifest.json'), false);
   xhr.send(null);
@@ -31,18 +26,14 @@ function getVersion()
   return manifest.version;
 }
 
-function objectEquals(a, b)
-{
+function objectEquals(a, b) {
   if (a==b) return true;
   if (a==null||b==null) return false;
-  for (x in a)
-  {
-    if (a[x])
-    {
+  for (x in a) {
+    if (a[x]) {
       var t=typeof (a[x]);
       if (typeof (b[x])!=t) return false;
-      switch (t)
-      {
+      switch (t) {
         case 'object': if (!objectEquals(a[x], b[x])) return false; break;
         case 'function': break;
         default: if (a[x]!=b[x]) return false;
@@ -55,63 +46,51 @@ function objectEquals(a, b)
   return true;
 }
 
-function strStartsWith(str, find)
-{
+function strStartsWith(str, find) {
   return str!=null?str.indexOf(find)==0:false;
 }
 
-function strEndsWith(str, find)
-{
-  if (str!=null)
-  {
+function strEndsWith(str, find) {
+  if (str!=null) {
     var lastIndex=str.lastIndexOf(find);
     return (lastIndex!= -1)&&(lastIndex+find.length==str.length);
   }
   else return false;
 }
 
-function forEach(list, callback)
-{
+function forEach(list, callback) {
   for (var i=0; i<list.length; i++)
     callback(list[i]);
 }
 
-function listIndexOf(list, item, selector)
-{
+function listIndexOf(list, item, selector) {
   if (selector==null) selector=function (x) { return x; };
-  for (var i=0; i<list.length; i++)
-  {
+  for (var i=0; i<list.length; i++) {
     if (item==selector(list[i])) return i;
   }
   return -1;
 }
 
-function listContains(list, item, selector)
-{
+function listContains(list, item, selector) {
   return listIndexOf(list, item, selector)>=0;
 }
 
-function arrayToText(list)
-{
+function arrayToText(list) {
   var rc="";
   for (var i=0; i<list.length; i++)
     rc=rc.concat(list[i], "\n");
   return rc;
 }
 
-function openExtUrl(url, refreshOnly, param, onReady)
-{
+function openExtUrl(url, refreshOnly, param, onReady) {
   var baseUrl=chrome.extension.getURL(url);
   if (param==null) param="";
 
-  getAllTabs(function (allTabs)
-  {
+  getAllTabs(function (allTabs) {
     var ok=false;
-    for (var i=0; i<allTabs.length; i++)
-    {
+    for (var i=0; i<allTabs.length; i++) {
       var tab=allTabs[i];
-      if (tab.url.indexOf(baseUrl)==0)
-      {
+      if (tab.url.indexOf(baseUrl)==0) {
         chrome.tabs.update(tab.id, { "url": baseUrl+param, "selected": !refreshOnly });
         ok=true;
         break;
@@ -124,33 +103,26 @@ function openExtUrl(url, refreshOnly, param, onReady)
   });
 }
 
-function showOptions(domain)
-{
+function showOptions(domain) {
   chrome.extension.sendRequest({ cmd: "refreshOptions", show: true, domain: domain });
 }
 
-function ti18n(msg, p1, p2, p3, p4, p5)
-{
+function ti18n(msg, p1, p2, p3, p4, p5) {
   return chrome.i18n.getMessage(msg, [p1, p2, p3, p4, p5]);
 }
 
-function localizePage()
-{
+function localizePage() {
   //translate a page into the users language
-  $("[i18n]:not(.i18n-replaced)").each(function ()
-  {
+  $("[i18n]:not(.i18n-replaced)").each(function () {
     $(this).html(ti18n($(this).attr("i18n")));
   });
-  $("[i18n_value]:not(.i18n-replaced)").each(function ()
-  {
+  $("[i18n_value]:not(.i18n-replaced)").each(function () {
     $(this).val(ti18n($(this).attr("i18n_value")));
   });
-  $("[i18n_title]:not(.i18n-replaced)").each(function ()
-  {
+  $("[i18n_title]:not(.i18n-replaced)").each(function () {
     $(this).attr("title", ti18n($(this).attr("i18n_title")));
   });
-  $("[i18n_replacement_el]:not(.i18n-replaced)").each(function ()
-  {
+  $("[i18n_replacement_el]:not(.i18n-replaced)").each(function () {
     // Replace a dummy <a/> inside of localized text with a real element.
     // Give the real element the same text as the dummy link.
     var dummy_link=$("a", this);
@@ -163,15 +135,12 @@ function localizePage()
   });
 }
 
-function setVersionInfo()
-{
+function setVersionInfo() {
   $("#versionInfo").text("v"+getVersion()+" by Christian Zangl, coralllama@gmail.com");
 }
 
-function splitSubdom(dom)
-{
-  var xmatch=function (dom, regex)
-  {
+function splitSubdom(dom) {
+  var xmatch=function (dom, regex) {
     var rc=dom.match(regex);
     if (rc&&rc.length>=1) return rc[0];
     return null;
@@ -183,8 +152,7 @@ function splitSubdom(dom)
   else suffix="";
 
   var rc=new Array();
-  while (true)
-  {
+  while (true) {
     var name=dom+suffix;
 
     rc.push(dom+suffix);
@@ -195,36 +163,30 @@ function splitSubdom(dom)
   return rc;
 }
 
-function uriHostAuthority(uri)
-{
+function uriHostAuthority(uri) {
   return uri.authority.split(':')[0];
 }
 
-function splitSubdom2(dom)
-{
+function splitSubdom2(dom) {
   var rc=splitSubdom(dom);
   var i=rc.length-1;
   if (i>=0) rc[i]="*."+rc[i];
   return rc;
 }
 
-function getRealDom(dom)
-{
+function getRealDom(dom) {
   if (strStartsWith(dom, ".")) dom=dom.substr(1);
   return dom;
 }
 
-function getRootDom(dom)
-{
+function getRootDom(dom) {
   var rc=splitSubdom(getRealDom(dom));
   var i=rc.length-1;
   if (i>=0) return rc[i]; else return null;
 }
 
-function getAllTabs(callback)
-{
-  chrome.windows.getAll({ populate: true }, function (windows)
-  {
+function getAllTabs(callback) {
+  chrome.windows.getAll({ populate: true }, function (windows) {
     var rc=new Array();
     for (var i=0; i<windows.length; i++)
       rc=rc.concat(windows[i].tabs);
@@ -232,16 +194,12 @@ function getAllTabs(callback)
   });
 }
 
-function getAllActiveDomains(callback)
-{
+function getAllActiveDomains(callback) {
   var rc=new Array();
-  getAllTabs(function (tabs)
-  {
-    for (var i=0; i<tabs.length; i++)
-    {
+  getAllTabs(function (tabs) {
+    for (var i=0; i<tabs.length; i++) {
       var uri=new URI(tabs[i].url);
-      if (uri.scheme=="http"||uri.scheme=="https")
-      {
+      if (uri.scheme=="http"||uri.scheme=="https") {
         var dom=getRootDom(uriHostAuthority(uri));
         if (!listContains(rc, dom)) rc.push(dom);
       }
@@ -250,11 +208,9 @@ function getAllActiveDomains(callback)
   });
 }
 
-function Log(maxEntries)
-{
+function Log(maxEntries) {
   var log=new Array();
-  this.write=function (text)
-  {
+  this.write=function (text) {
     var now=new Date(Date.now()).toLocaleTimeString();
     var last=null;
     if (log.length>0) last=log[0];
@@ -264,8 +220,7 @@ function Log(maxEntries)
     //console.log(text);
   };
 
-  this.dump=function ()
-  {
+  this.dump=function () {
     return log;
   };
 }

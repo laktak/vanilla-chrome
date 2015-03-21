@@ -1,69 +1,55 @@
-body
-{
+body {
   font: 14px arial;
   overflow-y: scroll;
   background-color: #ECECEC;
 }
-h2
-{
+h2 {
   padding: 0px;
   margin: 0px 0px 4px 0px;
 }
-h3
-{
+h3 {
   padding: 0px;
   margin: 0px 0px 4px 0px;
 }
 
-a
-{
+a {
   color: blue;
   text-decoration: none;
 }
-a:hover
-{
+a:hover {
   text-decoration: underline;
 }
-a:visited
-{
+a:visited {
   color: blue;
 }
 
-#whitelisted_domains
-{
+#whitelisted_domains {
   margin: 10px;
 }
 
-.entry_table td
-{
+.entry_table td {
   vertical-align: top;
 }
-.entry_table
-{
+.entry_table {
   font-size: 12px;
 }
 
-.note
-{
+.note {
   font-size: 12px;
 }
-.ok_message
-{
+.ok_message {
   color: green;
 }
-.error_message
-{
+.error_message {
   color: red;
 }
-.sneaky
-{
+.sneaky {
   font-size: x-small;
   color: gray;
   border-color: gray;
   margin-top: 50px;
 }
-.info
-{
+.info {
   background: #eeeeee;
   border: 1px solid gray;
   -webkit-border-radius: 5px;
@@ -72,94 +58,78 @@ a:visited
   padding: 5px;
   width: 460px;
 }
-.section
-{
+.section {
   border: 1px solid #666666;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 20px;
   background-color: #fff;
 }
-.spo
-{
+.spo {
   height: 150px;
   padding: 0 100px;
   display: table;
   font-size: 120%;
 }
-.spo, .spo:hover, .spo:visited, .spo:active
-{
+.spo, .spo:hover, .spo:visited, .spo:active {
   color: black;
   text-decoration: none;
 }
-.spo div
-{
+.spo div {
   height: 100%;
   width: 500px;
   display: table-cell; vertical-align: middle;
 }
-.spo img
-{
+.spo img {
   height: 150px;
   float: left;
   margin-right: 30px;
 }
-.gi
-{
+.gi {
   background-color: green;
   padding: 10px;
   border-radius: 5px;
   color: #fff;
 }
-.box
-{
+.box {
   border: 1px solid black;
   padding: 5px;
   margin: 5px;
 }
-.topInfo
-{
+.topInfo {
   font-size: 12pt;
   margin-top: 5px;
 }
-.warning
-{
+.warning {
   color: red;
   font-style: italic;
   font-weight: bold;
   padding-left: 30px;
 }
-.icon
-{
+.icon {
   background-repeat: no-repeat;
   padding-left: 45px;
 }
-.update_time
-{
+.update_time {
   padding-left: 3em;
   color: gray;
 }
 
-.optionList
-{
+.optionList {
   border: 0;
 }
-.optionList td
-{
+.optionList td {
   vertical-align: top;
 }
-.optionList select
-{
+.optionList select {
   font-size: larger;
 }
 
-.optionDescription
-{
+.optionDescription {
   cursor: pointer;
   line-height: 1.5em;
 }
 
-.diag_table
-{
+.diag_table {
   width: 100%;
 }
