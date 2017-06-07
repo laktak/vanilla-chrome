@@ -19,11 +19,7 @@ function getBg() {
 }
 
 function getVersion() {
-  var xhr=new XMLHttpRequest();
-  xhr.open('GET', chrome.extension.getURL('manifest.json'), false);
-  xhr.send(null);
-  var manifest=JSON.parse(xhr.responseText);
-  return manifest.version;
+  return chrome.runtime.getManifest().version;
 }
 
 function objectEquals(a, b) {
