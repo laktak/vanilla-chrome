@@ -1,6 +1,12 @@
 Vanilla Cookie Manager
 ==============
 
+# DEPRECATED
+
+> I haven't updated this extension in years, mostly because Google never provided a useful API to manage all your site data. Please look for alternatives.
+
+
+
 A Cookie Whitelist Manager for Chrome that helps protect your privacy. Automatically removes unwanted cookies.
 Cookies can be used for authentication, storing your site preferences or anything else that can be saved as text data. Unfortunately they can also be used to track you.
 
